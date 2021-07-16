@@ -21,12 +21,12 @@ SELECT avg(height_meters) AS avg_height
 FROM mountains;
 
 .print
-.print 'number of ascents per century'
+.print 'Number of ascents per century'
 SELECT
   strftime(
     '%Y',
     date(first_ascent)
-  ) / 100 + 1 AS century,
-  count(*) AS ascents
+  ) / 100 + 1 AS Century,
+  count(*) AS Ascents
 FROM mountains
 GROUP BY century;
