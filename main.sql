@@ -17,7 +17,7 @@ INSERT INTO mountains VALUES
   ('Cho Oyu', 8188, '1954-10-19');
 
 .print 'average mountain height'
-SELECT round(avg(height_meters)) AS avg_height
+SELECT round(avg(height_meters),2) AS avg_height
 FROM mountains;
 
 .print
