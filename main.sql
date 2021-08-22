@@ -16,7 +16,7 @@ INSERT INTO mountains VALUES
   ('Piz Palü', 3900, '1835-08-12'),
   ('Cho Oyu', 8188, '1954-10-19');
 
-.print 'average mountain height'
+.print 'Average mountain height'
 SELECT round(avg(height_meters),2) AS avg_height
 FROM mountains;
 
